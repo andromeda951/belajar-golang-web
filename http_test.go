@@ -19,7 +19,7 @@ func TestHttp(t *testing.T) {
 	HelloHandler(recorder, request)
 
 	response := recorder.Result()
-	body, _ := io.ReadAll(recorder.Body)
+	body, _ := io.ReadAll(response.Body)
 
 	fmt.Println(response.StatusCode)
 	fmt.Println(response.Status)
