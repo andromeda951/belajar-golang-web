@@ -43,7 +43,7 @@ func TestFileServer2(t *testing.T) {
 	}
 }
 
-// go:embed resources
+//go:embed resources
 var resources embed.FS
 
 func TestFileServerGolangEmbed(t *testing.T) {
